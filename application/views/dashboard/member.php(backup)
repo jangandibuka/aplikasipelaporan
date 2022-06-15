@@ -1,0 +1,144 @@
+<section class="content-header">
+    <h1>
+        Dashboard Kampus <?php echo $pic ?>
+        <small>Members</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard Kampus</li>
+    </ol>
+</section>
+
+
+<!-- Main content -->
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3>
+                        <?php /*
+                        foreach ($harga as $r) {
+                            echo "Rp " . rupiah($r->harga);
+                        }*/
+                        ?>
+                    </h3>
+                    <p>Pegawai Sudah Vaksin 1</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="<?php echo base_url(''); ?>" class="small-box-footer">More Detail <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>
+                        <?php /*
+                        foreach ($lunas as $r) {
+                            echo "Rp " . rupiah($r->harga);
+                        }*/
+                        ?>
+                    </h3>
+                    <p>Pegawai Sudah Vaksin 2</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="<?php echo base_url('transaksi/lunas'); ?>" class="small-box-footer">More Detail <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-orange">
+                <div class="inner">
+                    <h3>
+                        <?php /*
+                        foreach ($lunas as $r) {
+                            echo "Rp " . rupiah($r->harga);
+                        }*/
+                        ?>
+                    </h3>
+                    <p>Pegawai Sudah Vaksin Lainnya</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="<?php echo base_url('transaksi/lunas'); ?>" class="small-box-footer">More Detail <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        
+
+    </div><!-- /.row -->
+
+    <!-- Left col -->
+    <section class="content">
+    <div class="container">
+        <br/>
+        <div class="row">
+        
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="container"></div>
+                    </div>
+                </div>
+         
+        </div>
+    </div>
+    </section>
+
+
+</section>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+<script>    
+    $(function () { 
+        var data_vaksin1 = <?php echo $vaksin1; ?>;
+        var data_vaksin2 = <?php echo $vaksin2; ?>;
+        var data_vaksin_lain = <?php echo $vaksinLain; ?>;
+        var data_hari = <?php echo $hari; ?>;
+        console.log(data_hari);
+
+        Highcharts.chart('container', {
+            colors: ["#7cb5ec", "#f7a35c", "#FF1493"],
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Perbandingan Pegawai sudah vaksinasi'
+            },
+            xAxis: {
+                // ambil tanggal per bulan
+                //categories: ['2013','2014','2015', '2016']
+                categories : data_hari
+            },
+            yAxis: {
+                title: {
+                    text: 'Rate'
+                }
+            },
+            series: [{
+                name: 'Vaksin 1',
+                data: data_vaksin1
+            }, {
+                name: 'Vaksin 2',
+                data: data_vaksin2
+
+            }, {
+                name: 'Vaksin Lain',
+                data: data_vaksin_lain
+
+            }]
+        });
+    });
+
+</script>
