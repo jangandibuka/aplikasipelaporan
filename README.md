@@ -12,3 +12,4 @@ Fitur Aplikasi TARUNA :
 - Halaman Menu Transaksi (Transaksi lunas, Hutang, All Transaksi)
 - Menu Seting Untuk Level Administrator
 Add Menu dinamis 
+Sinkronisasi dengan Cpanel
