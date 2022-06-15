@@ -62,7 +62,14 @@
         if (localStorage.getItem(aksesUser)) {
             var data = localStorage.getItem(aksesUser);
             var value = data.split('|');
-           
+            //kondisi sebelumunya
+            // if (value[1] == 'kampus') {
+            //     $(`.view-kampus`).hide();
+            //     $(`.view-kantor`).show();
+            // } else {
+
+            //     $(`.view-kantor`).hide();
+            // }
             if (value[1] == 'kantor') {
                 // $(`.view-kampus`).hide();
                 $(`.view-kantor`).show();
@@ -75,7 +82,29 @@
             }
         }
 
-      
+        // elmSelect.change(function(e) {
+        //     var data = e.target.value;
+        //     var value = data.split('|');
+        //     localStorage.setItem(aksesUser, data);
+        //     if (value[1] == 'kantor') {
+        //         $(`.view-kampus`).hide();
+        //         $(`.view-kantor`).show();
+        //     } else if (value[1] == 'kampus') {
+        //         $(`.view-kampus`).show();
+        //         $(`.view-kantor`).hide();
+        //     } else {
+        //         $(`.view-kampus`).hide();
+        //         $(`.view-kantor`).hide();
+        //     }
+
+        //     $('.form-absensi .form-control').val('');
+        //     $('.form-absensi .datepicker').val('<?php echo date('Y-m-d') ?>');
+        //     $('.form-absensi .text-red').html('');
+        //     $('.form-absensi-pegawai .form-control').val('');
+        //     $('.form-absensi-pegawai .datepicker').val('<?php echo date('Y-m-d') ?>');
+        //     $('.form-absensi-pegawai .text-red').html('');
+        // })
+        //kondisi elmSelect sebelumnya
         elmSelect.change(function(e) {
             var data = e.target.value;
             var value = data.split('|');

@@ -91,6 +91,24 @@ class Aksesinstansi extends CI_Controller
             }
         }
     }
+    function view_absensi_custom()
+    {
+        if ($_POST) {
+            $type = $this->input->post('type', true);
+            $id = $this->input->post('id', true);
+
+            if ($type === 'kantor') {
+                $data['apa'] = '';
+                $this->load->view('aksesinstansi/absensi/kantor_onoffice', $data);
+            } else if ($type === 'kampus') {
+                $data['apa'] = '';
+                $this->load->view('aksesinstansi/absensi/kampus_onoffice', $data);
+            } else {
+                echo $type;
+                echo "uye";
+            }
+        }
+    }
 
     function options_absensi()
     {

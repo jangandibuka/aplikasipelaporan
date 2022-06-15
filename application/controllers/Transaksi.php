@@ -114,6 +114,7 @@ class Transaksi extends CI_Controller
         );
         $data['lokasi_data'] = $this->aksesinstansi_model->get_tab_lokasi_kampus();
         $data['tipe'] = $tipe;
+        // var_dump($data1);die();
         $this->template->display('aksesinstansi/absensi/form_onoffice', $data);
     }
 
