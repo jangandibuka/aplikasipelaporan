@@ -24,17 +24,23 @@
                 </div>
             </div>
             <div class="col-md-3">
+                <div class="info-box bg-aqua">
+                    <span class="info-box-number jml-pegawai-izin">0</span>
+                    <div class="info-box-title">Sakit</div>
+                </div>
+            </div>
+            <div class="col-md-3">
                 <div class="info-box bg-red">
                     <span class="info-box-number jml-pegawai-covid">0</span>
                     <div class="info-box-title">Terkonfirmasi Covid-19</div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-2">
                 <div class="info-box bg-aqua">
                     <span class="info-box-number jml-pegawai-update">0</span>
                     <div class="info-box-title">Update perkantor</div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="clearfix"></div>
@@ -64,6 +70,7 @@
         var elmPegawaiSehat = $(clsJmlPegawai + '-sehat');
         var elmPegawaiCovid = $(clsJmlPegawai + '-covid');
         var elmPegawaiijin = $(clsJmlPegawai + '-izin');
+        var elmPegawaiSakit = $(clsJmlPegawai + '-sakit')
         var elmPegawaiUpdate = $(clsJmlPegawai + '-update');
 
         var get_data_kantor = function(value = '') {
@@ -92,13 +99,15 @@
                     jumlah: parseInt(data.jumlah_pegawai),
                     sehat: parseInt(data.sehat),
                     covid: parseInt(data.covid),
-                    ijin: parseInt(data.ijin)
+                    ijin: parseInt(data.ijin),
+                    sakit: parseInt(data.sakit)
                 }
 
                 elmJmlKantor.html(result.jumlah);
                 elmPegawaiSehat.html(result.sehat);
                 elmPegawaiCovid.html(result.covid);
                 elmPegawaiijin.html(result.ijin);
+                elmPegawaiSakit.html(result.sakit);
             },
             chart: function(data) {
                 ChartVaksin.data.datasets.forEach(dataset => {
@@ -107,7 +116,7 @@
                 ChartVaksin.update();
 
                 ChartLokasi.data.datasets.forEach(dataset => {
-                    dataset.data = [data.wfh, data.wfo, data.dinas_luar];
+                    dataset.data = [data.wfh, data.wfo, data.dinas_luar, data.cuti];
                 });
                 ChartLokasi.update();
             }
@@ -184,7 +193,7 @@
                     backgroundColor: COLORS_CHART,
                     data: []
                 }],
-                labels: ['WFH', 'WFO', 'Dinas Luar']
+                labels: ['WFH', 'WFO', 'Dinas Luar', 'Cuti']
             }
         });
     })

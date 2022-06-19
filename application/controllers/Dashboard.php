@@ -199,11 +199,12 @@ class Dashboard extends CI_Controller
             COALESCE(SUM(ijin + cuti),0) as ijin,
             COALESCE(SUM(wfo),0) as wfo,
             COALESCE(SUM(wfh),0) as wfh,
-            COALESCE(SUM(wfh),0) as wfh,
+            COALESCE(SUM(isoman),0) as sakit,
             COALESCE(SUM(dinas_luar),0) as dinas_luar,
             COALESCE(SUM(vaksin1),0) as vaksin1,
             COALESCE(SUM(vaksin2),0) as vaksin2,
-            COALESCE(SUM(vaksin_lain),0) as vaksin_lain
+            COALESCE(SUM(vaksin_lain),0) as vaksin_lain,
+            COALESCE(SUM(cuti),0) as cuti
             from trx_absensi_pegawai ta
             WHERE tgl_absensi='$tgl' $where";
             $absensi = $this->db->query($sql)->row();
@@ -217,7 +218,8 @@ class Dashboard extends CI_Controller
                 "sehat" => "0",
                 "vaksin1" => "0",
                 "vaksin2" => "0",
-                "vaksin_lain" => "0"
+                "vaksin_lain" => "0",
+                "sakit" => "0"
             );
             $update_kantor = 0;
         }
