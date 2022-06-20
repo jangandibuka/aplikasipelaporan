@@ -830,3 +830,110 @@ DEBUG - 2022-06-19 23:26:46 --> Config file loaded: C:\xampp\htdocs\taruna2\appl
 DEBUG - 2022-06-19 23:26:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
 DEBUG - 2022-06-19 23:26:46 --> Session class already loaded. Second attempt ignored.
 DEBUG - 2022-06-19 23:26:46 --> Total execution time: 0.0450
+DEBUG - 2022-06-19 23:41:54 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:54 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:54 --> Form_validation class already loaded. Second attempt ignored.
+ERROR - 2022-06-19 23:41:54 --> Severity: Notice --> Undefined variable: id_pegawai_type C:\xampp\htdocs\taruna2\application\views\aksesinstansi\absensi\kantor.php 14
+ERROR - 2022-06-19 23:41:54 --> Severity: Notice --> Undefined variable: id_pegawai_type C:\xampp\htdocs\taruna2\application\views\aksesinstansi\absensi\kantor.php 14
+DEBUG - 2022-06-19 23:41:54 --> Total execution time: 0.0877
+DEBUG - 2022-06-19 23:41:54 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:54 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:54 --> Total execution time: 0.0558
+DEBUG - 2022-06-19 23:41:57 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:57 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:57 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:57 --> Total execution time: 0.0701
+DEBUG - 2022-06-19 23:41:57 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:57 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:57 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:57 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:57 --> Total execution time: 0.0420
+DEBUG - 2022-06-19 23:41:57 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:57 --> Total execution time: 0.0487
+DEBUG - 2022-06-19 23:41:59 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:59 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:59 --> Form_validation class already loaded. Second attempt ignored.
+ERROR - 2022-06-19 23:41:59 --> Severity: Notice --> Undefined variable: id_pegawai_type C:\xampp\htdocs\taruna2\application\views\aksesinstansi\absensi\kantor.php 14
+ERROR - 2022-06-19 23:41:59 --> Severity: Notice --> Undefined variable: id_pegawai_type C:\xampp\htdocs\taruna2\application\views\aksesinstansi\absensi\kantor.php 14
+DEBUG - 2022-06-19 23:41:59 --> Total execution time: 0.0612
+DEBUG - 2022-06-19 23:41:59 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:41:59 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:41:59 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:41:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:41:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:41:59 --> Total execution time: 0.0314
+DEBUG - 2022-06-19 23:42:00 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:00 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:01 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:01 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:01 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:01 --> Total execution time: 0.0689
+DEBUG - 2022-06-19 23:42:01 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:01 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:01 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:01 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:01 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:01 --> Total execution time: 0.0402
+DEBUG - 2022-06-19 23:42:12 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:12 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:12 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:12 --> Total execution time: 0.0522
+DEBUG - 2022-06-19 23:42:12 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:12 --> Global POST, GET and COOKIE data sanitized
+ERROR - 2022-06-19 23:42:12 --> 404 Page Not Found: Assets/js
+DEBUG - 2022-06-19 23:42:12 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:12 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:12 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:12 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:12 --> Total execution time: 0.0610
+DEBUG - 2022-06-19 23:42:18 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:18 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:18 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:18 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:18 --> Total execution time: 0.0446
+DEBUG - 2022-06-19 23:42:18 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:18 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:18 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:18 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:18 --> Total execution time: 0.0658
+DEBUG - 2022-06-19 23:42:20 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:20 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:20 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:20 --> Form_validation class already loaded. Second attempt ignored.
+ERROR - 2022-06-19 23:42:20 --> Severity: Notice --> Undefined variable: id_pegawai_type C:\xampp\htdocs\taruna2\application\views\aksesinstansi\absensi\kantor_onoffice.php 23
+ERROR - 2022-06-19 23:42:20 --> Severity: Notice --> Undefined variable: id_pegawai_type C:\xampp\htdocs\taruna2\application\views\aksesinstansi\absensi\kantor_onoffice.php 23
+DEBUG - 2022-06-19 23:42:20 --> Total execution time: 0.0601
+DEBUG - 2022-06-19 23:42:20 --> UTF-8 Support Enabled
+DEBUG - 2022-06-19 23:42:20 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2022-06-19 23:42:20 --> Config file loaded: C:\xampp\htdocs\taruna2\application\config/ion_auth.php
+DEBUG - 2022-06-19 23:42:20 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2022-06-19 23:42:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2022-06-19 23:42:20 --> Total execution time: 0.0587

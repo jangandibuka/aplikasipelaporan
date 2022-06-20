@@ -70,6 +70,8 @@ class Transaksi extends CI_Controller
             'id_kampus' => $row->id,
             'tgl_absensi' => set_value('tgl_absensi'),
             'jumlah_taruna' => set_value('jumlah_taruna'),
+            'jumlah_pria' => set_value('jumlah_pria'),
+            'jumlah_taruna_wanita' => set_value('jumlah_taruna_wanita'),
             'pria_sehat' => set_value('pria_sehat'),
             'pria_covid' => set_value('pria_covid'),
             'pria_ijin' => set_value('pria_ijin'),
@@ -100,6 +102,7 @@ class Transaksi extends CI_Controller
             'id_kampus' => $row->id,
             'tgl_absensi' => set_value('tgl_absensi'),
             'jumlah_taruna' => set_value('jumlah_taruna'),
+            'jumlah_taruna_wanita' => set_value('jumlah_taruna_wanita'),
             'pria_sehat' => set_value('pria_sehat'),
             'pria_covid' => set_value('pria_covid'),
             'pria_ijin' => set_value('pria_ijin'),
@@ -144,6 +147,7 @@ class Transaksi extends CI_Controller
             $data = array(
                 'tgl_absensi' => $this->input->post('tgl_absensi', TRUE),
                 'jumlah_taruna' => $this->input->post('jumlah_taruna', TRUE),
+                'jumlah_taruna_wanita' => $this->input->post('jumlah_taruna_wanita', TRUE),
                 'pria_sehat' => $this->input->post('pria_sehat', TRUE),
                 'pria_covid' => $this->input->post('pria_covid', TRUE),
                 'pria_ijin' => $this->input->post('pria_ijin', TRUE),
@@ -208,7 +212,7 @@ class Transaksi extends CI_Controller
                 'pic' => $kam->kampus,
             );
             $data['lokasi_data'] = $this->Lokasi_model->get_all();
-            //print_r($data);die();    
+            //print_r($data);die();
             $this->template->display('transaksi/trx_absensi_form_edit', $data);
         } else {
             $this->session->set_flashdata('message', 'Record Not Found');

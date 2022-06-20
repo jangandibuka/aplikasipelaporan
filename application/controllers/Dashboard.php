@@ -108,11 +108,11 @@ class Dashboard extends CI_Controller
             $where_instansi = " AND id IN(" . join(',', $data_id) . ")";
         }
         if ($tgl != '') {
-            $absensi = $this->db->query("select 
-                lokasi, 
+            $absensi = $this->db->query("select
+                lokasi,
                 COALESCE(sum(jumlah_taruna), 0) as jumlah_taruna,
                 COALESCE(sum(jumlah_pria), 0) as jumlah_pria,
-                COALESCE(sum(jumlah_wanita), 0) as jumlah_wanita,
+                COALESCE(sum(jumlah_taruna_wanita), 0) as jumlah_taruna_wanita,
                 COALESCE(sum(sehat), 0) as sehat,
                 COALESCE(sum(sehat_pria), 0) as sehat_pria,
                 COALESCE(sum(sehat_wanita), 0) as sehat_wanita,
@@ -123,10 +123,10 @@ class Dashboard extends CI_Controller
                 COALESCE(sum(ijin_pria), 0) as ijin_pria,
                 COALESCE(sum(ijin_wanita), 0) as ijin_wanita
                 from (
-                    select ml.lokasi, 
-                    sum(ta.jumlah_taruna + ta.jumlah_taruna_wanita) as jumlah_taruna,
+                    select ml.lokasi,
+                    sum(ta.pria_sehat + ta.wanita_sehat + ta.pria_covid + ta.wanita_covid + ta.pria_ijin + ta.wanita_ijin ) as jumlah_taruna,
                     sum(ta.jumlah_taruna) as jumlah_pria,
-                    sum(ta.jumlah_taruna_wanita) as jumlah_wanita,
+                    sum(ta.wanita_sehat + ta.wanita_covid + ta.wanita_ijin) as jumlah_taruna_wanita,
                     sum(ta.pria_sehat + ta.wanita_sehat) as sehat,
                     sum(ta.pria_sehat) as sehat_pria,
                     sum(ta.wanita_sehat) as sehat_wanita,

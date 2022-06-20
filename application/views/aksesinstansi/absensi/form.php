@@ -158,7 +158,7 @@
             var elmForm = {
                 tgl_absensi: e.target.tgl_absensi,
                 jumlah_taruna: e.target.jumlah_taruna,
-                jumlah_taruna_wanita: e.target.jumlah_taruna,
+                jumlah_taruna_wanita: e.target.jumlah_taruna_wanita,
                 pria_sehat: e.target.pria_sehat,
                 pria_covid: e.target.pria_covid,
                 pria_ijin: e.target.pria_ijin,
